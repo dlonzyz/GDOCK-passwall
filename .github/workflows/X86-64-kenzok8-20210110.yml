@@ -4,15 +4,15 @@
 #=================================================
 
 #=================================================
-name: Build X86-64+kenzok8-20210110
+name: Build X86-64+kenzok8-20210122
 #=================================================
 
 on: 
   release:
     types: [published]
-#  push:
-#    branches: 
-#      - master
+    push:
+    branches: 
+       - master
   watch:
     types: [started]
 
