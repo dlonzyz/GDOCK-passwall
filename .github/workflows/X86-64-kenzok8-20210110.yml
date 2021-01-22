@@ -94,9 +94,9 @@ jobs:
         #=================================================
         #+++++++++++++++++++++++++++++++++++++++++++++++++
         cp -f X86.config ./lede/.config
-        chmod +x diy-newifi3.sh
+        chmod +x diy.sh
         cd lede
-        ../diy-newifi3.sh
+        ../diy.sh
         #++++++++++++++++++++++++++++++++++++++++++++++++
         #=================================================
         make defconfig
@@ -123,5 +123,5 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         #=================================================
-        name: X86-64+kenzok8-20210110
+        name: X86-64-dlonzyz-20210122
         path: ./lede/bin
