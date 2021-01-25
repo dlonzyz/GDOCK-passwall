@@ -10,7 +10,7 @@ name: Build X86-64-dlonzyz-20210122
 on: 
   release:
     types: [published]
-  push:
+  #push:
     branches: 
        - master
   watch:
