@@ -55,7 +55,7 @@ jobs:
         
     - name: Clone source code
       run: |
-        git clone https://github.com/coolsnowwolf/lede lede
+        git clone https://github.com/dlonzyz/lede.git lede
         
         ##修改lede目录中的feeds.conf.default文件，把第5行的 # 去掉。
         #cd lede
@@ -122,5 +122,5 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         #=================================================
-        name: X86-64-dlonzyz-20210122
+        name: X86-64-dlonzyz-20210126
         path: ./lede/bin
