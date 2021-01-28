@@ -131,9 +131,13 @@ jobs:
 
         
         #=================================================
-          name: X86-64-dlonzyz-20210128
+          name: X86-64-dlonzyz-20210128 release v2
           path: ./lede/bin
-          repo_token: ${{ secrets.TOKEN }}
-          file: ./artifact/firmware/*
-          tag: ${{ github.ref }}
-          file_glob: true
+    - name: Upload release asset
+      if: github.event == 'release'
+      uses: svenstaro/upload-release-action@master
+      with:
+        repo_token: ${{ secrets.TOKEN }}
+        file: ./artifact/firmware/*
+        tag: ${{ github.ref }}
+        file_glob: true
