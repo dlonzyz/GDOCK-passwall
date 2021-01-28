@@ -8,7 +8,7 @@ name: Build X86-64-dlonzyz-20210128
 #=================================================
 
 on: 
-  release:
+  release: 
     types: [published]
   push:
     branches: 
@@ -128,6 +128,12 @@ jobs:
     - name : Upload artifact
       uses: actions/upload-artifact@master
       with:
+
+        
         #=================================================
-        name: X86-64-dlonzyz-20210128
-        path: ./lede/bin
+          name: X86-64-dlonzyz-20210128
+          path: ./lede/bin
+          repo_token: ${{ secrets.TOKEN }}
+          file: ./artifact/firmware/*
+          tag: ${{ github.ref }}
+          file_glob: true
