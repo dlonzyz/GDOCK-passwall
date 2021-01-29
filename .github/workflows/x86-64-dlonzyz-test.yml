@@ -10,7 +10,7 @@ name: Build X86-64-dlonzyz-20210128
 on: 
   release: 
     types: [published]
-  # push:
+  push:
     branches: 
        - master
   watch:
@@ -134,3 +134,11 @@ jobs:
           name: X86-64-dlonzyz-20210128 release v2
           path: ./lede/bin
    
+    - name: Upload release asset
+      if: github.event == 'release'
+      uses: svenstaro/upload-release-action@master
+      with:
+        repo_token: ${{ secrets.TOKEN }}
+        file: ./artifact/*/*
+        tag: ${{ github.ref }}
+        file_glob: true
