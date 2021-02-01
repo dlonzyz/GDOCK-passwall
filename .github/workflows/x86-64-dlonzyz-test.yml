@@ -8,7 +8,7 @@ name: Build X86-64-dlonzyz-20210129
 #=================================================
 
 on: 
-  release:  
+  release: 
     types: [published]
   push:
     branches: 
