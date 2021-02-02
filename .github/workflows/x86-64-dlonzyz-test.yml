@@ -137,6 +137,6 @@ jobs:
       uses: svenstaro/upload-release-action@master
       with:
         repo_token: ${{ secrets.TOKEN }}
-        file: ./bin/targets/x86/64/*dlonzyz*.img
+        file: ./bin/targets/x86/64/*combined*.img
         tag: ${{ github.ref }}
         file_glob: true   
