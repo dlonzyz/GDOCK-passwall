@@ -133,10 +133,4 @@ jobs:
         #=================================================
           name: X86-64-dlonzyz-20210129 release v2
           path: ./lede/bin
-    - name: Upload release asset
-      uses: svenstaro/upload-release-action@master
-      with:
-        repo_token: ${{ secrets.TOKEN }}
-        file: ./bin/targets/x86/64/*combined*.img
-        tag: ${{ github.ref }}
-        file_glob: true   
+   
