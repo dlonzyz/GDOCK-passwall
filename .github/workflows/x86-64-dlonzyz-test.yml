@@ -133,4 +133,4 @@ jobs:
         #=================================================
           name: X86-64-dlonzyz-20210129 release v2
           path: ./lede/bin
-   
+          UPLOAD_RELEASE: true
