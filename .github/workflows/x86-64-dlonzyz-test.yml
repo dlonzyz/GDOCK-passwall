@@ -73,7 +73,7 @@ jobs:
         
     - name: Clone luci-app-fileassistant code
       run: |
-        cd lede/package &&  git clone https://github.com/siryle1213/luci-app-fileassistant.git
+        cd lede/package &&  git clone https://github.com/shidahuilang/luci-app-fileassistant.git
             
     - name: Clone aliddns code
       run: |
