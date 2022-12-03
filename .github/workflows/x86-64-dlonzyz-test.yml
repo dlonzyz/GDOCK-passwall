@@ -81,7 +81,9 @@ jobs:
     - name: Clone serverchan code
       run: |
         cd lede/package &&  git clone https://github.com/tty228/luci-app-serverchan.git        
-    
+    - name: Clone socat code
+      run: |
+        cd lede/package &&  git clone https://github.com/dlonzyz/luci-app-socat.git
 ##****************************************************************************     
       
         
