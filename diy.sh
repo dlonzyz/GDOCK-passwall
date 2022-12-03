@@ -25,7 +25,7 @@ echo '修改banner'
 #cp -f ../banner package/base-files/files/etc/
 
 echo '下载luci-app-socat'
-git clone dlonzyz/luci-app-socat ../diy/luci-app-luci-app-socat
+# git clone dlonzyz/luci-app-socat ../diy/luci-app-luci-app-socat
 
 echo '集成diy目录'
 # ln -s ../../diy ./package/openwrt-packages
