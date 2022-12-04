@@ -4,7 +4,7 @@
 #=================================================
 
 #=================================================
-name: Build X86-64-dlonzyz-2022.524
+name: Build X86-64-dlonzyz-2022.12.03
 #=================================================
 
 on: 
@@ -18,7 +18,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
 
     steps:
     - name: Checkout
@@ -133,6 +133,6 @@ jobs:
 
         
         #=================================================
-          name: X86-64-dlonzyz-20220524 release v1
+          name: X86-64-dlonzyz-20221203 release v1
           path: ./lede/bin
           UPLOAD_RELEASE: true
