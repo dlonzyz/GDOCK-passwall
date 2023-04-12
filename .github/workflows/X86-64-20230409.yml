@@ -10,11 +10,11 @@ name: Build X86-20230409
 on: 
   release:
     types: [published]
-#  push:
-#    branches: 
-#      - master
-#  watch:
-#    types: [started]
+  push:
+    branches: 
+      - master
+  watch:
+    types: [started]
 
 jobs:
   build:
