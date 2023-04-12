@@ -123,3 +123,10 @@ jobs:
           name: X86-64-dlonzyz-20221203 release v1
           path: ./lede/bin
           UPLOAD_RELEASE: true
+ ###### 把dl库也下载回来   ###############
+    - name : Upload dl
+      uses: actions/upload-artifact@master
+      with:
+        #=================================================
+        name: X86-20230409-dl
+        path: ./lede/dl
