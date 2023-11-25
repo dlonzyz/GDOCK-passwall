@@ -10,10 +10,10 @@ name: Build X86-64-dlonzyz-2022.12.03
 on: 
   release: 
     types: [published]
-  push:
-    branches: 
-       - master
-  watch:
+  # push:
+  #  branches: 
+  #     - master
+ # watch:
     types: [started]
 
 jobs:
