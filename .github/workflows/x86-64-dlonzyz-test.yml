@@ -7,10 +7,10 @@
 name: Build X86-64-dlonzyz-2023.11.25
 #=================================================
 
-on: 
-  release: 
+#on: 
+ # release: 
     types: [published]
-  push:
+  #push:
     branches: 
        - master
   watch:
@@ -120,7 +120,7 @@ jobs:
 
         
         #=================================================
-          name: X86-64-dlonzyz-20221203 release v1
+          name: X86-64-dlonzyz-20231125 release v1
           path: ./lede/bin
          
  ###### 把dl库也下载回来   ###############
