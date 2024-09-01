@@ -14,10 +14,8 @@ on:
     types: [started]
 
 jobs:
-    runs-on: ubuntu-latest
-    env:
-      DOCKER_REPO: ${{ secrets.DOCKER_USERNAME }}/ddns-go
-      DOCKER_PLATFORMS: linux/amd64,linux/arm,linux/arm64
+  build:
+    runs-on: ubuntu-18.04
 
     steps:
     - name: Checkout
