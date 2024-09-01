@@ -69,7 +69,10 @@ jobs:
         cd lede/package &&  git clone https://github.com/chenhw2/luci-app-aliddns.git
     - name: Clone serverchan code
       run: |
-        cd lede/package &&  git clone https://github.com/tty228/luci-app-serverchan.git        
+        cd lede/package &&  git clone https://github.com/tty228/luci-app-serverchan.git
+     - name: Clone ddns go
+      run: |
+        cd lede/package &&  git clone https://github.com/jeessy2/ddns-go.git
     
 ##****************************************************************************     
       
