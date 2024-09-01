@@ -14,10 +14,7 @@ on:
     types: [started]
 
 jobs:
-  build_openwrt:
-
-    name: Build OpenWrt Firmware
-
+  build:
     runs-on: ubuntu-latest
 
     steps:
