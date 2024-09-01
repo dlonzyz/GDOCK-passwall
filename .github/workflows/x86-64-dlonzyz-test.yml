@@ -4,8 +4,8 @@
 #=================================================
 name: Build X86-64-dlonzyz-2024.9.1
 
-#on: 
- # release: 
+on: 
+  release:
     types: [published]
   #push:
     branches: 
