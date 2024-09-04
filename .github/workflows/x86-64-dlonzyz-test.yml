@@ -2,16 +2,21 @@
 #   Description: Build  X86-64固件 FROM LEAN'S LEDE
 #   Author: JK
 #=================================================
-name: Build X86-64-dlonzyz-2024.9.1
+name: Build OpenWrt
 
-on: 
+on:
   release:
     types: [published]
   push:
-    branches: 
-       - master
- # watch:
-  #  types: [started]
+    branches:
+      - dev-lean-lede
+   # paths:
+    #  - '.config'
+  # schedule:
+    # - cron: 0 8 * * 5
+  watch:
+    types: [started]
+
 
 jobs:
   build:
