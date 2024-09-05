@@ -67,7 +67,7 @@ jobs:
         
     - name: Clone ddns-go code
       run: |
-        cd lede/package &&  git clone https://github.com/jeessy2/ddns-go.git
+        cd lede/package &&  git clone https://github.com/sirpdboy/luci-app-ddns-go.git
     
 ##****************************************************************************     
       
