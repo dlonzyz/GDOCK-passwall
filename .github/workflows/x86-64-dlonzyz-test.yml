@@ -3,7 +3,7 @@
 #   Author: JK
 #=================================================
 
-name: Build_x86_64
+name: Build_x86_64_20240905
 
 # Add a button to trigger the workflow
 on: 
@@ -65,11 +65,8 @@ jobs:
       run: |
         cd lede/package &&  git clone https://github.com/tty228/luci-app-serverchan.git
         
-    - name: Clone ddns-go code
-      run: |
-        cd lede/package &&  git clone https://github.com/sirpdboy/luci-app-ddns-go.git
-    
-##****************************************************************************     
+##***************************************************************************
+   
       
         
     - name: Update feeds
