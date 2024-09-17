@@ -15,7 +15,7 @@ on:
 #    types: [started]
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-laste
 
     steps:
     - name: Checkout
@@ -81,7 +81,7 @@ jobs:
 
     - name: Load custom configuration
       run: |
-        cp -f gdockfull128.config ./lede/.config
+        cp -f gdockfull128-1.config ./lede/.config
         chmod +x diy.sh
         cd lede
         ../diy.sh
