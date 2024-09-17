@@ -28,4 +28,4 @@ echo '下载luci-app-socat'
 # git clone dlonzyz/luci-app-socat ../diy/luci-app-luci-app-socat
 
 echo '集成diy目录'
-# ln -s ../../diy ./package/openwrt-packages
+ln -s ../../diy ./package/openwrt-packages
