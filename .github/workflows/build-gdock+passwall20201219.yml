@@ -6,8 +6,8 @@
 name: Build 竞斗云+passwall-20240917
 
 on: 
-  release:
-    types: [published]
+  repository_dispatch:
+  workflow_dispatch:
   push:
     branches: 
       - master
